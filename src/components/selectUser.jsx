@@ -20,6 +20,7 @@ class SelectUser extends Component {
                 <h1>Select user</h1>
                 <Select name="members" options={members} placeholder="Select member" />
                 <Select name="fines" options={fines} placeholder="Select fine" />
+                {/* addFineForm */}
             </React.Fragment>
          );
     }

@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Select = ({ name, label, options, placeholder, ...rest}) => {
+const Select = ({ name, label, options, error, ...rest}) => {
     return (  
-        <React.Fragment>
+        <div className="form-group">
         <label htmlFor={name}>{label}</label>
-            <select name={name} id={name} {...rest} className="custom-select">
+            <select name={name} id={name} {...rest} className="form-control">
                 <option value="" />
                 {options.map(option => (
                     <option key={option._id} value={option._id}>
@@ -12,7 +12,8 @@ const Select = ({ name, label, options, placeholder, ...rest}) => {
                     </option>
                 ))}
             </select>
-        </React.Fragment>
+            {error && <div className='alert alert-danger'>{error}</div>}
+        </div>
     );
 }
  
