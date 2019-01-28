@@ -1,24 +1,26 @@
-
+// round and type change to name toDo make dynamic
 const season1 = {
     season: '2017',
     members: [{
         _id: 1,
         name: 'Mads',
-        nounds:[{
-            round: 1,
+        rounds:[{
+            _id: 1,
+            name: 1,
             fines: [{
-                type: 'fart',
+                type: 'late',
                 amount: 2
             }]
         },
         {
-            round: 2,
+            _id: 2,
+            name: 2,
             fines:  [{
                 type: 'phone',
                 amount: 1
             }, 
             { 
-                type: 'fart',
+                type: 'snickers',
                 amount: 2
             }]
         }]
@@ -27,14 +29,16 @@ const season1 = {
         _id: 2,
         name: 'Jens',
         rounds:[{
-            round: 1,
+            _id: 1,
+            name: 1,
             fines: [{ 
                 type: 'late',
                 amount: 1
             }]
         },
         {
-            round: 2,
+            _id: 2,
+            name: 2,
             fines: [{ 
                 type: 'phone',
                 amount: 2
@@ -43,18 +47,22 @@ const season1 = {
          
     }],
     fineRates: [{
-        name: 'fart',
+        _id: 1,
+        name: 'snickers',
         price: 10
     },
     {
-        name: 'cheerleader',
+        _id: 2,
+        name: 'not listen',
         price: 25
     }, 
     {
+        _id: 3,
         name: 'phone',
         price: 15 
     }, 
     {
+        _id: 4,
         name: 'late',
         price: 5    
     }]
