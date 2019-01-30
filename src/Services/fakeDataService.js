@@ -8,6 +8,7 @@ const season1 = {
             _id: 1,
             name: 1,
             fines: [{
+                _id: 4,
                 type: 'late',
                 amount: 2
             }]
@@ -16,10 +17,12 @@ const season1 = {
             _id: 2,
             name: 2,
             fines:  [{
+                _id: 3,
                 type: 'phone',
                 amount: 1
             }, 
             { 
+                _id: 1,
                 type: 'snickers',
                 amount: 2
             }]
@@ -32,6 +35,7 @@ const season1 = {
             _id: 1,
             name: 1,
             fines: [{ 
+                _id: 4,
                 type: 'late',
                 amount: 1
             }]
@@ -40,6 +44,7 @@ const season1 = {
             _id: 2,
             name: 2,
             fines: [{ 
+                _id: 3,
                 type: 'phone',
                 amount: 2
             }]
