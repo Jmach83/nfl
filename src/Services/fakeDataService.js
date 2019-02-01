@@ -6,7 +6,7 @@ const season1 = {
         name: 'Mads',
         rounds:[{
             _id: 1,
-            name: 1,
+            round: 1,
             fines: [{
                 _id: 4,
                 type: 'late',
@@ -15,7 +15,7 @@ const season1 = {
         },
         {
             _id: 2,
-            name: 2,
+            round: 2,
             fines:  [{
                 _id: 3,
                 type: 'phone',
@@ -33,7 +33,7 @@ const season1 = {
         name: 'Jens',
         rounds:[{
             _id: 1,
-            name: 1,
+            round: 1,
             fines: [{ 
                 _id: 4,
                 type: 'late',
@@ -42,7 +42,7 @@ const season1 = {
         },
         {
             _id: 2,
-            name: 2,
+            round: 2,
             fines: [{ 
                 _id: 3,
                 type: 'phone',
@@ -53,22 +53,22 @@ const season1 = {
     }],
     fineRates: [{
         _id: 1,
-        name: 'snickers',
+        type: 'snickers',
         price: 10
     },
     {
         _id: 2,
-        name: 'not listen',
+        type: 'not listen',
         price: 25
     }, 
     {
         _id: 3,
-        name: 'phone',
+        type: 'phone',
         price: 15 
     }, 
     {
         _id: 4,
-        name: 'late',
+        type: 'late',
         price: 5    
     }]
 
